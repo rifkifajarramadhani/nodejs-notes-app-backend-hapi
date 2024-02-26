@@ -100,15 +100,15 @@ const editNoteByIdHandler = (req, h) => {
 const deleteNoteByIdHandler = (req, h) => {
     const { id } = req.params;
 
-    const index = notes.filter((note) => note.id === id);
-
+    const index = notes.findIndex((note) => note.id === id);
+    
     if (index !== -1) {
         notes.splice(index, 1);
         const res = h.response({
             status: 'success',
             message: 'Note deleted'
         });
-        res.status(200);
+        res.code(200);
         return res;
     }
 
@@ -116,7 +116,7 @@ const deleteNoteByIdHandler = (req, h) => {
         status: 'fail',
         message: 'Note not found'
     });
-    res.status(404);
+    res.code(404);
     return res;
 }
 
