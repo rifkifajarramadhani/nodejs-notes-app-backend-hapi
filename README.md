@@ -1,6 +1,6 @@
 # Node.js RESTful API
 
-This project is a RESTful API built with Node.js, Express, and MySQL. It's designed to provide a solid foundation for building scalable and maintainable server-side applications.
+This project is a RESTful API built with Node.js, HapiJS, and PostgreSQL. It's designed to provide a solid foundation for building scalable and maintainable server-side applications.
 
 ## Getting Started
 
@@ -20,13 +20,13 @@ A step-by-step series of examples that tell you how to get a development environ
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/rifkifajarramadhani/nodejs-restful-api.git
+git clone https://github.com/rifkifajarramadhani/nodejs-notes-app-backend-hapi.git
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd nodejs-restful-api
+cd nodejs-notes-app-backend-hapi
 ```
 
 3. Install dependencies:
